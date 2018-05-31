@@ -1,6 +1,6 @@
 /* Header file automatically generated from Component.idl */
 /*
- * File built with Microsoft(R) MIDLRT Compiler Engine Version 10.00.0214 
+ * File built with Microsoft(R) MIDLRT Compiler Engine Version 10.00.0220 
  */
 
 #pragma warning( disable: 4049 )  /* more than 64k source lines */
@@ -50,7 +50,7 @@
 #endif // defined(WINDOWS_FOUNDATION_FOUNDATIONCONTRACT_VERSION)
 
 #if !defined(WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION)
-#define WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION 0x60000
+#define WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION 0x70000
 #endif // defined(WINDOWS_FOUNDATION_UNIVERSALAPICONTRACT_VERSION)
 
 #if !defined(WINDOWS_NETWORKING_SOCKETS_CONTROLCHANNELTRIGGERCONTRACT_VERSION)
