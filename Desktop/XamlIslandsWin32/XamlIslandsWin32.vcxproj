@@ -38,7 +38,7 @@
     <ProjectGuid>{F87266B1-CADC-47CE-A0D9-84286D61949E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Desktop</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17697.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17704.0</WindowsTargetPlatformVersion>
     <CppWinRTEnabled>true</CppWinRTEnabled>
     <ProjectName>XamlIslandsWin32</ProjectName>
   </PropertyGroup>
@@ -135,7 +135,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>windowsapp.lib;user32.lib;shcore.lib</AdditionalDependencies>
+      <AdditionalDependencies>windowsapp.lib;user32.lib;shcore.lib;ole32.lib</AdditionalDependencies>
     </Link>
     <Manifest>
       <AdditionalManifestFiles>$(TargetName)$(TargetExt).manifest</AdditionalManifestFiles>
