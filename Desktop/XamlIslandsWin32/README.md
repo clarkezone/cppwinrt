@@ -8,4 +8,4 @@ The sample shows how to create a simple High DPI aware Win32 app in C++ with som
 
 2) Similarly, on app exit there will also be an exception on cleanup.  This is also a known bug.
 
-<img src="README_ASSETS/XamlIslandsWin32Desktop.PNG" width=700>
+<img src="README_ASSETS/XamlIslandsWin32Desktop.jpg" width=700>
