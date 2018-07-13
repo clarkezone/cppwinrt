@@ -28,6 +28,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Desktop.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
