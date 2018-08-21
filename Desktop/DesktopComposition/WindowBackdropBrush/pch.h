@@ -7,4 +7,4 @@
 #include <DispatcherQueue.h>
 //#include "Generated Files/winrt/Microsoft.Graphics.Canvas.h"
 //#include "Generated Files/winrt/Microsoft.Graphics.Canvas.Geometry.h"
-#include "Generated Files/winrt/Microsoft.Graphics.Canvas.Effects.h"
+//#include "Generated Files/winrt/Microsoft.Graphics.Canvas.Effects.h"
