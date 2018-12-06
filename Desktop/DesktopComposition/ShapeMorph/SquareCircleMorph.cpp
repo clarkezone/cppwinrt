@@ -12,6 +12,7 @@
 #include <d2d1_1.h>
 #include <d2d1helper.h>
 //#include "WindowsNumerics.h"
+
 #include <Windows.Graphics.Interop.h>
 
 using namespace winrt;
@@ -20,9 +21,6 @@ using namespace winrt;
 //using namespace Windows::UI;
 using namespace Windows::UI::Composition;
 using namespace Windows::Graphics;
-//using namespace Microsoft::WRL;
-
-
 
 namespace
 {
@@ -103,12 +101,12 @@ namespace
 	static bool IsRuntimeCompatible()
 	{
 		return false;
-		//TODO
-		/*if (!Windows::Foundation::Metadata::ApiInformation::IsTypePresent("Windows.UI.Composition.CompositionGeometricClip"))
+		
+		if (!Windows::Foundation::Metadata::ApiInformation::IsTypePresent(L"Windows.UI.Composition.CompositionGeometricClip"))
 		{
 			return false;
 		}
-		return true;*/
+		return true;
 	}
 
 	class AnimatedVisual //sealed : public Microsoft::UI::Xaml::Controls::IAnimatedVisual TODO
@@ -330,11 +328,11 @@ void AnimatedVisuals::SquareCircleMorph::TryCreateAnimatedVisual(
 	Compositor const& compositor, VisualCollection const& visuals)
 {
 	mCompositor = compositor;
-	//TODO: fix
-    /*if (!IsRuntimeCompatible())
+	
+    if (!IsRuntimeCompatible())
     {
-        return nullptr;
-    }*/
+        return;
+    }
 	auto balls = new AnimatedVisual(compositor);
 	thing = (void*)balls;
 	visuals.InsertAtTop(balls->RootVisual());
