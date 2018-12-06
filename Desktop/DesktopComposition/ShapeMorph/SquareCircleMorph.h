@@ -43,7 +43,7 @@ namespace AnimatedVisuals
 
 	private:
 		ScalarKeyFrameAnimation progressAnimation{ nullptr };
-		Compositor compositor;
+		Compositor mCompositor{nullptr};
 		void* thing; //temp hack
 	};
 }

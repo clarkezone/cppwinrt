@@ -329,6 +329,7 @@ namespace
 void AnimatedVisuals::SquareCircleMorph::TryCreateAnimatedVisual(
 	Compositor const& compositor, VisualCollection const& visuals)
 {
+	mCompositor = compositor;
 	//TODO: fix
     /*if (!IsRuntimeCompatible())
     {
@@ -340,11 +341,11 @@ void AnimatedVisuals::SquareCircleMorph::TryCreateAnimatedVisual(
 }
 
 void AnimatedVisuals::SquareCircleMorph::Play() {
-	progressAnimation = compositor.CreateScalarKeyFrameAnimation();
+	progressAnimation = mCompositor.CreateScalarKeyFrameAnimation();
 	progressAnimation.Duration(std::chrono::seconds(2));
 	progressAnimation.IterationBehavior(AnimationIterationBehavior::Forever);
 	progressAnimation.Direction(AnimationDirection::Alternate);
-	auto linearEasing = compositor.CreateLinearEasingFunction();
+	auto linearEasing = mCompositor.CreateLinearEasingFunction();
 	progressAnimation.InsertKeyFrame(0, 0, linearEasing);
 	progressAnimation.InsertKeyFrame(1, 1, linearEasing);
 	auto balls = (AnimatedVisual*)thing;
