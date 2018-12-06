@@ -11,14 +11,10 @@
 #include "d2d1.h"
 #include <d2d1_1.h>
 #include <d2d1helper.h>
-//#include "WindowsNumerics.h"
 
 #include <Windows.Graphics.Interop.h>
 
 using namespace winrt;
-//using namespace Windows::Foundation;
-//using namespace Windows::Foundation::Numerics;
-//using namespace Windows::UI;
 using namespace Windows::UI::Composition;
 using namespace Windows::Graphics;
 
@@ -285,16 +281,12 @@ namespace
 		        return Windows::Foundation::TimeSpan { c_durationTicks };
 		    }
 
-			//void set_duration(Windows::Foundation::TimeSpan duration)
-			//{
-			//	//TODO: 
-			//	//c_durationTicks = duration.count();
-			//}
+			void set_duration(Windows::Foundation::TimeSpan duration)
+			{
+				//TODO: 
+				//c_durationTicks = duration.count();
+			}
 		
-			/*Windows::UI::Composition::CompositionPropertySet get_progress() {
-				reutrn 
-			}*/
-
 		    Windows::UI::Composition::Visual RootVisual()
 		    {
 		        return _root;
@@ -308,17 +300,17 @@ namespace
 	};
 } // end namespace
 
-//TODO:
-//Microsoft::UI::Xaml::Controls::IAnimatedVisual^ AnimatedVisuals::SquareCircleMorph::TryCreateAnimatedVisual(
-//    Compositor^ compositor,
-//    Object^* diagnostics)
+
+//com_ptr<Microsoft::UI::Xaml::Controls::IAnimatedVisual> AnimatedVisuals::SquareCircleMorph::TryCreateAnimatedVisual(
+//    Compositor compositor,
+//    com_ptr<IInspectable> diagnostics)
 //{
 //    diagnostics = nullptr;
 //    if (!IsRuntimeCompatible())
 //    {
 //        return nullptr;
 //    }
-//    return ref new AnimatedVisual(compositor);
+//    return new AnimatedVisual(compositor);
 //}
 
 #include <memory>
