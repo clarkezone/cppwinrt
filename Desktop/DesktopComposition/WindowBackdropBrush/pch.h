@@ -5,6 +5,8 @@
 #include <winrt/Windows.System.h>
 #include <winrt/Windows.UI.Composition.Desktop.h>
 #include <winrt/Windows.Graphics.h>
+#include <winrt/Windows.Graphics.Effects.h>
+
 #include <windows.ui.composition.interop.h>
 #include <ShellScalingAPI.h>
 #include <DispatcherQueue.h>
@@ -18,6 +20,6 @@
 #define DWMWA_USE_IMMERSIVE_DARK_MODE 20
 #endif
 
-//#include "Generated Files/winrt/Microsoft.Graphics.Canvas.h"
-//#include "Generated Files/winrt/Microsoft.Graphics.Canvas.Geometry.h"
-//#include "Generated Files/winrt/Microsoft.Graphics.Canvas.Effects.h"
+#include "x64/debug/Generated Files/winrt/Microsoft.Graphics.Canvas.h"
+#include "x64/debug/Generated Files/winrt/Microsoft.Graphics.Canvas.Geometry.h"
+#include "x64/debug/Generated Files/winrt/Microsoft.Graphics.Canvas.Effects.h"
