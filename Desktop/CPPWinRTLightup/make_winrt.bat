@@ -1,0 +1,1 @@
+cppwinrt.exe -in sdk -out .
