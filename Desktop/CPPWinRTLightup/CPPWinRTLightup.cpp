@@ -2,6 +2,7 @@
 //
 
 #include "framework.h"
+#include <Unknwn.h>
 #include "CPPWinRTLightup.h"
 #include "WinRT/Windows.UI.Composition.h"
 #include "WinRT/Windows.UI.Composition.Desktop.h"
@@ -77,7 +78,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     composition::Desktop::DesktopWindowTarget target{nullptr};
     composition::Compositor compositor{ nullptr };
     composition::SpriteVisual visual{ nullptr };
-
+    
     if (auto factory = winrt::try_get_activation_factory<composition::Compositor>()) {
         auto options = DispatcherQueueOptions{};
         options.dwSize = sizeof(DispatcherQueueOptions);
@@ -98,8 +99,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             auto shadow = v2.CreateDropShadow();
             visual.Shadow(shadow);
         }
-
-        //TODO interface version check
     }
 
 
